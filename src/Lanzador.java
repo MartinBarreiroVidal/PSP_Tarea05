@@ -1,4 +1,6 @@
 import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class Lanzador {
     public int ejecutarFactor(String numero) {
@@ -19,6 +21,37 @@ public class Lanzador {
         //2 errores: IOException por si no existe el comando factor
         catch (IOException | InterruptedException e) {
             System.out.println("Error al ejecutar el proceso: " + e.getMessage());
+            return -1;
+        }
+    }
+    //metodo que ejecuta factor, lee la salida linea a linea añadiendo [OK] o [ERROR] y devuelve el codigo de salida
+    public int ejecutarFactorNivel2(String numero) {
+        ProcessBuilder pb = new ProcessBuilder("factor", numero);
+
+        try {
+            //ejecutamos el proceso
+            Process proceso = pb.start();
+
+            //leemos la salida normal del proceso (cuando funciona bien)
+            BufferedReader readerOk = new BufferedReader(new InputStreamReader(proceso.getInputStream()));
+            String linea;
+            while ((linea = readerOk.readLine()) != null) {
+                System.out.println("[OK] " + linea);
+            }
+
+            //leemos la salida de error (cuando le pasamos letras por ejemplo)
+            BufferedReader readerError = new BufferedReader(new InputStreamReader(proceso.getErrorStream()));
+            while ((linea = readerError.readLine()) != null) {
+                System.out.println("[ERROR] " + linea);
+            }
+
+            //detiene la ejecucion y espera
+            int exitCode = proceso.waitFor();
+
+            return exitCode;
+
+        } catch (IOException | InterruptedException e) {
+            System.out.println("[ERROR] Error al ejecutar el proceso: " + e.getMessage());
             return -1;
         }
     }

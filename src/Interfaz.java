@@ -7,12 +7,24 @@ public class Interfaz {
         Scanner scanner = new Scanner(System.in);
         //creamos objeto lanzador
         Lanzador lanzador = new Lanzador();
+        //preguntamos el nivel al arrancar el programa
+        System.out.println("¿Qué nivel quieres usar? (1, 2, 3 o 4):");
+        System.out.print("> ");
+        String nivelEscrito = scanner.nextLine();
+        int nivel = 1; //nivel 1 por defecto
+
+        //intentamos pasar lo que escribio a numero
+        try {
+            nivel = Integer.parseInt(nivelEscrito);
+        } catch (NumberFormatException e) {
+            System.out.println("Nivel no válido. Usaremos el 1.");
+        }
         //entrada a lo que escriba el usuario
         String entrada = "";
 
         //bucle mientras sea true...
         while(true) {
-            System.out.println("Introduzca un número entre (o salir para terminar): ");
+            System.out.println("Introduzca un número (o salir para terminar): ");
             entrada = scanner.nextLine();
 
             if (entrada.equals("salir")) {
@@ -20,7 +32,20 @@ public class Interfaz {
                 //salimos del bucle si el usuario indica salir
                 break;
             }
-            int numSalida = lanzador.ejecutarFactor(entrada);
+
+            int numSalida = 0;
+
+            //dependiendo del nivel que escribiera al principio usamos un metodo u otro
+            if (nivel == 1) {
+                numSalida = lanzador.ejecutarFactor(entrada);
+            } else if (nivel == 2) {
+                numSalida = lanzador.ejecutarFactorNivel2(entrada);
+            } else {
+                //si meten 3 o 4 como todavia no lo programamos, usamos el 1 por ahora
+                System.out.println("Nivel no implementado todavía, ejecutando nivel 1...");
+                numSalida = lanzador.ejecutarFactor(entrada);
+            }
+
             System.out.println("Operación completada. Código de salida: " + numSalida);
         }
 

@@ -22,5 +22,16 @@
 
 
 
+### 2. NIVEL 2: Salida formateando cada línea como [OK] o [ERROR],
+##### Tendremos que importar los buffers y inputs para este apartado:
+##### import java.io.BufferedReader; import java.io.InputStreamReader;
 
+### 2.1 INTERFAZ:
+![Captura desde 2026-09-25 13-43-34.png](Capturas/Captura%20desde%202026-09-25%2013-43-34.png)
+
+### 2.2 LANZADOR:
+![Captura desde 2026-09-25 13-45-11.png](Capturas/Captura%20desde%202026-09-25%2013-45-11.png)
+
+### 2.3 COMPROBACIONES:
+![Captura desde 2026-09-25 13-47-25.png](Capturas/Captura%20desde%202026-09-25%2013-47-25.png)
 
