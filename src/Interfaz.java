@@ -25,7 +25,6 @@ public class Interfaz {
         }
 
         scanner.close();
-
     }
 }
 

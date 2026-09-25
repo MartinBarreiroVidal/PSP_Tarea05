@@ -22,5 +22,4 @@ public class Lanzador {
             return -1;
         }
     }
-
 }
