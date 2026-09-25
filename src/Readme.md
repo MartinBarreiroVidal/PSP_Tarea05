@@ -1,13 +1,13 @@
 ## Documentación Tarea05 PSP - Martín Barreiro
 
 ### 1.1 INTERFAZ: Pide al usuario un nº, en bucle, hasta que escriba salir.
-![Captura desde 2026-09-25 13-23-56.png](../../../Im%C3%A1genes/Capturas%20de%20pantalla/Captura%20desde%202026-09-25%2013-23-56.png)
+![Captura desde 2026-09-25 13-23-56.png](Capturas/Captura%20desde%202026-09-25%2013-23-56.png)
 ### 1.2 LANZADOR: Recibe el nº, crea proceso (factor), código salida.
-![Captura desde 2026-09-25 13-24-19.png](../../../Im%C3%A1genes/Capturas%20de%20pantalla/Captura%20desde%202026-09-25%2013-24-19.png)
+![Captura desde 2026-09-25 13-24-19.png](Capturas/Captura%20desde%202026-09-25%2013-24-19.png)
 ### 1.3 TABLA: Valor, salida y código salida:
 
 #### Valor 360:
-![Captura desde 2026-09-25 13-13-50.png](../../../Im%C3%A1genes/Capturas%20de%20pantalla/Captura%20desde%202026-09-25%2013-13-50.png)
+![Captura desde 2026-09-25 13-13-50.png](Capturas/Captura%20desde%202026-09-25%2013-13-50.png)
 #### Valor 1:
 ![img_1.png](Capturas/img_1.png)
 
