@@ -6,3 +6,5 @@
 ### 1.2 LANZADOR: Recibe el nº, crea proceso (factor), código salida.
 ![img.png](Capturas/img.png)
 
+
+
