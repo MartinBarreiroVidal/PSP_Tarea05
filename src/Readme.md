@@ -3,7 +3,7 @@
 ### 1.1 INTERFAZ: Pide al usuario un nº, en bucle, hasta que escriba salir.
 ![Captura desde 2026-09-25 13-23-56.png](Capturas/Captura%20desde%202026-09-25%2013-23-56.png)
 ### 1.2 LANZADOR: Recibe el nº, crea proceso (factor), código salida.
-![Captura desde 2026-09-25 13-24-19.png](Capturas/Captura%20desde%202026-09-25%2013-24-19.png)
+![Captura desde 2026-09-25 13-23-56.png](Capturas/Captura%20desde%202026-09-25%2013-23-56.png)
 ### 1.3 TABLA: Valor, salida y código salida:
 
 #### Valor 360:
