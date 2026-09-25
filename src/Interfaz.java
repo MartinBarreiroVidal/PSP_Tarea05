@@ -48,7 +48,6 @@ public class Interfaz {
 
             System.out.println("Operación completada. Código de salida: " + numSalida);
         }
-
         scanner.close();
     }
 }
