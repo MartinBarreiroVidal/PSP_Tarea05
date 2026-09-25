@@ -23,6 +23,7 @@ public class Interfaz {
             int numSalida = lanzador.ejecutarFactor(entrada);
             System.out.println("Operación completada. Código de salida: " + numSalida);
         }
+
         scanner.close();
 
     }
