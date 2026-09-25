@@ -35,20 +35,17 @@ public class Interfaz {
 
             int numSalida = 0;
 
-            //dependiendo del nivel que escribiera al principio usamos un metodo u otro
+            //dependiendo del nivel que escribieramos al principio usamos un metodo u otro
             if (nivel == 1) {
                 numSalida = lanzador.ejecutarFactor(entrada);
             } else if (nivel == 2) {
                 numSalida = lanzador.ejecutarFactorNivel2(entrada);
             } else {
-                //si meten 3 o 4 como todavia no lo programamos, usamos el 1 por ahora
-                System.out.println("Nivel no implementado todavía, ejecutando nivel 1...");
-                numSalida = lanzador.ejecutarFactor(entrada);
+                //si no es 1 ni 2, el máximo será el 3
+                numSalida = lanzador.ejecutarFactorNivel3(entrada);
             }
-
             System.out.println("Operación completada. Código de salida: " + numSalida);
         }
-
         scanner.close();
     }
 }

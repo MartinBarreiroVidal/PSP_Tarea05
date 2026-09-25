@@ -35,3 +35,13 @@
 ### 2.3 COMPROBACIONES:
 ![Captura desde 2026-09-25 13-47-25.png](Capturas/Captura%20desde%202026-09-25%2013-47-25.png)
 
+### 3.1 INTERFAZ
+![Captura desde 2026-09-25 14-02-43.png](Capturas/Captura%20desde%202026-09-25%2014-02-43.png)
+
+### 3.2 LANZADOR:
+![Captura desde 2026-09-25 14-03-44.png](Capturas/Captura%20desde%202026-09-25%2014-03-44.png)
+
+![Captura desde 2026-09-25 14-04-41.png](Capturas/Captura%20desde%202026-09-25%2014-04-41.png)
+
+### 3.3 COMPROBACIONES:
+![Captura desde 2026-09-25 14-00-08.png](Capturas/Captura%20desde%202026-09-25%2014-00-08.png)
