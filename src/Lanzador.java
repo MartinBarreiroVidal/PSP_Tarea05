@@ -19,7 +19,7 @@ public class Lanzador {
 
             return exitCode;
         }
-        //2 errores: IOException por si no existe el comando factor
+        //2 errores: IOException por si no existe el comando factor, InterruptedException por si el proceso es interrumpido
         catch (IOException | InterruptedException e) {
             System.out.println("Error al ejecutar el proceso: " + e.getMessage());
             return -1;
@@ -36,6 +36,7 @@ public class Lanzador {
             //leemos la salida normal del proceso (cuando funciona bien)
             BufferedReader readerOk = new BufferedReader(new InputStreamReader(proceso.getInputStream()));
             String linea;
+            
             while ((linea = readerOk.readLine()) != null) {
                 System.out.println("[OK] " + linea);
             }
