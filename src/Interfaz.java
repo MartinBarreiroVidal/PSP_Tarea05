@@ -16,6 +16,7 @@ public class Interfaz {
         //intentamos pasar lo que escribio a numero
         try {
             nivel = Integer.parseInt(nivelEscrito);
+        //capturamos error si no es un numero
         } catch (NumberFormatException e) {
             System.out.println("Nivel no válido. Usaremos el 1.");
         }
@@ -41,8 +42,7 @@ public class Interfaz {
             } else if (nivel == 2) {
                 numSalida = lanzador.ejecutarFactorNivel2(entrada);
             } else {
-                //si meten 3 o 4 como todavia no lo programamos, usamos el 1 por ahora
-                System.out.println("Nivel no implementado todavía, ejecutando nivel 1...");
+                System.out.println("Nivel no implementado, ejecutando nivel 1...");
                 numSalida = lanzador.ejecutarFactor(entrada);
             }
 
