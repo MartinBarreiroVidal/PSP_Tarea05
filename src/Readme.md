@@ -41,7 +41,6 @@
 
 ### 3.2 LANZADOR:
 ![Captura desde 2026-09-25 14-03-44.png](Capturas/Captura%20desde%202026-09-25%2014-03-44.png)
-
 ![Captura desde 2026-09-25 14-04-41.png](Capturas/Captura%20desde%202026-09-25%2014-04-41.png)
 
 ### 3.3 COMPROBACIONES:
